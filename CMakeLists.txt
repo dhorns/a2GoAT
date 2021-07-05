@@ -181,6 +181,15 @@ add_executable(TaggEff
    )
 target_link_libraries(TaggEff goatbase ghist ${LIBS} ${ROOT_LIBRARIES})
 
+add_executable(Analyze
+   inc/PPhysics.h
+   src/PPhysics.cc
+   inc/PAnalyze.h
+   src/PAnalyze.cc
+   src/Analyze_main.cc
+   )
+target_link_libraries(Analyze goatbase ghist ${LIBS} ${ROOT_LIBRARIES})
+
 # install some scripts to the bin directory
 # by creating symlinks
 file(GLOB CORE_EXTRA_SCRIPTS "scripts/*")

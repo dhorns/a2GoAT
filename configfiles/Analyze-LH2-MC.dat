@@ -1,0 +1,58 @@
+#=======================================================================
+# Config file for a general Analysis of GoAT-Trees
+#=======================================================================
+
+# Set prompt and random windows (standard library and GH1 library)
+Set-Prompt-Cut: -13 12
+Add-Random-Cut: -300 -20
+Add-Random-Cut: 20 600
+
+# Set target mass (for standard physics library)
+Target-Mass: 938.27
+
+# Require charge of particles to match expected?
+Match-Charge: 1
+
+# Invariant mass cut (half width)
+Invariant-Mass-Cut: 30
+
+# Opening angle cut
+Opening-Angle-Cut: 10
+
+# Energy sum cut
+Energy-Sum-Cut: 140
+
+# Save separate prompt/random hists?
+Save-Randoms: 0
+
+# Perform split search?
+Split-Search: 1
+
+# Use pure MWPC tracks (those with no NaI energy)
+Pure-MWPC: 1
+
+# Use linear polarization
+#Linear-Pol: 1
+
+# TAPS detection efficiency
+#TAPS-Efficiency: 0.9
+
+# cut on the tagger channel (for standard physics library)
+#Tagger-Channel-Cut: 124 159
+
+# where are the live time scalers?
+# first is clock, second is inhibited, third (optional) is tagger inhib
+Live-Time-Scalers: 191 190 176
+
+Display-Scalers: TaggerAccScal 2064 2095
+Display-Scalers: TaggerAccScal 2864 2895
+Display-Scalers: TaggerAccScal 2352 2383
+Display-Scalers: TaggerAccScal 2000 2031
+Display-Scalers: TaggerAccScal 2608 2639
+Display-Scalers: TaggerAccScal 2320 2351
+Display-Scalers: TaggerAccScal 2288 2319
+Display-Scalers: TaggerAccScal 2576 2607
+Display-Scalers: TaggerAccScal 2032 2063
+Display-Scalers: TaggerAccScal 2640 2671
+Display-Scalers: TaggerAccScal 2928 2959
+Display-Scalers: TaggerAccScal 2896 2927
